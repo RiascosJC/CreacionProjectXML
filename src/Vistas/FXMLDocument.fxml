@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creararchivosxml.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="371.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="creararchivosxml.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="Ltitulo" layoutX="84.0" layoutY="23.0" text="AGREGAR EMPLEADO" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="LNombre" layoutX="42.0" layoutY="78.0" text="Nombre" />
+      <TextField fx:id="tNombre" layoutX="126.0" layoutY="74.0" />
+      <TextField fx:id="tDireccion" layoutX="126.0" layoutY="116.0" />
+      <Label fx:id="LDireccion" layoutX="42.0" layoutY="120.0" text="Direccion" />
+      <TextField fx:id="tEdad" layoutX="126.0" layoutY="154.0" />
+      <Label fx:id="LEdad" layoutX="42.0" layoutY="158.0" prefHeight="17.0" prefWidth="50.0" text="Edad" />
+      <Label fx:id="LDepart" layoutX="42.0" layoutY="234.0" text="Departamento" />
+      <TextField fx:id="tDepart" layoutX="126.0" layoutY="230.0" />
+      <TextField fx:id="tCodigo" layoutX="126.0" layoutY="188.0" />
+      <Label fx:id="LCodigo" layoutX="42.0" layoutY="192.0" prefHeight="17.0" prefWidth="50.0" text="Codigo" />
+      <Button layoutX="50.0" layoutY="288.0" mnemonicParsing="false" onAction="#AggEmpleadoL" prefHeight="44.0" prefWidth="108.0" text="Agregar " />
+      <Button layoutX="186.0" layoutY="288.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="149.0" text="Guardar Archivo XML" />
     </children>
 </AnchorPane>
