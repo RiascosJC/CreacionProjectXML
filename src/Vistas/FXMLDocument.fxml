@@ -26,6 +26,6 @@
       <TextField fx:id="tCodigo" layoutX="126.0" layoutY="188.0" />
       <Label fx:id="LCodigo" layoutX="42.0" layoutY="192.0" prefHeight="17.0" prefWidth="50.0" text="Codigo" />
       <Button layoutX="50.0" layoutY="288.0" mnemonicParsing="false" onAction="#AggEmpleadoL" prefHeight="44.0" prefWidth="108.0" text="Agregar " />
-      <Button layoutX="186.0" layoutY="288.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="149.0" text="Guardar Archivo XML" />
+      <Button layoutX="186.0" layoutY="288.0" mnemonicParsing="false" onAction="#GEmpleadoL" prefHeight="44.0" prefWidth="149.0" text="Guardar Archivo XML" />
     </children>
 </AnchorPane>

@@ -77,11 +77,21 @@ public class FXMLDocumentController implements Initializable {
         lTitulo.setText("Hello World!");
     }
     
+     @FXML
+    private void GEmpleadoL(ActionEvent event){
+        
+        Empleado objEmpleado = new Empleado();
+        boolean guaradar = objEmpleado.crearFileXML(ListaEmpleados);
+        
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
         ListaEmpleados = new LinkedList<>();
         // TODO
     }    
+
+   
     
 }
