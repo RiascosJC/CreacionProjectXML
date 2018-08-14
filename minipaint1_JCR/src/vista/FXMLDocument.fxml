@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="379.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minipaint1.FXMLDocumentController">
+   <children>
+      <Canvas fx:id="lienzo" height="348.0" layoutY="31.0" width="475.0" />
+      <MenuBar layoutY="-1.0" prefHeight="32.0" prefWidth="475.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#crearCuadrado" text="Crear Cuadrado" />
+                  <MenuItem mnemonicParsing="false" onAction="#crearCirculo" text="Crear Circulo" />
+                  <MenuItem mnemonicParsing="false" onAction="#crearTriangulo" text="CrearTriangulo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Delete" text="Delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#CambiarColor" text="CambiarColor" />
+                  <MenuItem mnemonicParsing="false" onAction="#transicionC" text="Transicion" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
